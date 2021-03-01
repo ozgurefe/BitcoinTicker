@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BitcoinTicker</string>
+    <string name="search_coin">Coin Ara</string>
+    <string name="add_fav">Add Fav</string>
+    <string name="two_sec">2 second</string>
+    <string name="hashing_algorithm">Hashing algorithm: </string>
+    <string name="description">Description: </string>
+    <string name="current_price">"Current Price: </string>
+    <string name="price_change_percentage_24_hour">Price change 24 Hour: </string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="favourite_coins">Favourite Coins</string>
+    <string name="warning_empty_refresh_interval">Refresh interval cannot be empty</string>
+</resources>

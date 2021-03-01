@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_coin_search">
+
+    <fragment
+        android:id="@+id/fragment_coin_search"
+        android:name="com.example.bitcointicker.ui.coin_search.CoinSearchFragment"
+        android:label="coin">
+        <action
+            android:id="@+id/action_fragment_coin_to_fragment_coin_detail"
+            app:destination="@id/fragment_coin_detail" >
+            <argument
+                android:name="coinId"
+                app:argType="java.lang.String"
+                />
+        </action>
+
+        <action android:id="@+id/action_fragment_coin_search_to_fragment_fav_coin"
+            app:destination="@+id/fragment_fav_coin"
+            />
+    </fragment>
+
+    <fragment
+        android:name="com.example.bitcointicker.ui.coin_detail.CoinDetailFragment"
+        android:id="@+id/fragment_coin_detail"
+        android:label="coin_detail">
+        <action
+            android:id="@+id/action_fragment_coin_detail_to_dialog_fragment_login"
+            app:destination="@id/fragment_login"/>
+    </fragment>
+
+    <fragment
+        android:name="com.example.bitcointicker.ui.login.LoginFragment"
+        android:id="@+id/fragment_login"
+        android:label="login"
+        >
+        <action
+            android:id="@+id/action_fragment_login_to_dialog_fragment_coin_detail"
+            app:destination="@id/fragment_coin_detail"/>
+    </fragment>
+
+    <fragment
+        android:name="com.example.bitcointicker.ui.coin_fav.FavouriteCoinFragment"
+        android:id="@+id/fragment_fav_coin"
+        android:label="fav_coin"
+        />
+
+
+</navigation>
